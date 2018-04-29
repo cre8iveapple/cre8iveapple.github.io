@@ -154,7 +154,7 @@ function resetOptions(){
 // Upload images  form default or file
 // ------------------------          
 var mySrcImg = new Image();
-mySrcImg.src = "Octocat.png";   
+mySrcImg.src = "https://cre8iveapple.github.io/Octocat.png";   
 // mySrcImg.src = "example42.bmp"; 
 
     
