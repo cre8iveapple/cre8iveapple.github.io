@@ -154,7 +154,7 @@ function resetOptions(){
 // Upload images  form default or file
 // ------------------------          
 var mySrcImg = new Image();
-mySrcImg.src = "octocat.png";   
+mySrcImg.src = "Octocat.png";   
 // mySrcImg.src = "example42.bmp";     
 
 mySrcImg.addEventListener('load', function () {loadImg();}, false);
