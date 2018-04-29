@@ -153,23 +153,10 @@ function resetOptions(){
 // ------------------------
 // Upload images  form default or file
 // ------------------------          
-//var mySrcImg = new Image();
-//mySrcImg.src = "Octocat.png";   
+var mySrcImg = new Image();
+mySrcImg.src = "Octocat.png";   
 // mySrcImg.src = "example42.bmp"; 
 
-        var files = "Octocat.png";   
-        var fileSelected = files[0];
-          if(!fileSelected.type.match('image.*'))
-            {return;}
-       var reader = new FileReader();
-         reader.onload =(function(theFile){
-         return function (e) {
-          document.getElementById("outputImage").innerHTML =
-          "<img src =\"" + e.target.result + "\" alt=\"Image from file\" id=\"imgOutput\" width =\"50%\" ><input type=\"button\" id=\"clickMe\" Value=\"Process Image\" onClick=\"srcImg()\"/>";
-         };
-         })(fileSelected);
-        reader.readAsDataURL(fileSelected);
-}
     
 
 mySrcImg.addEventListener('load', function () {loadImg();}, false);
