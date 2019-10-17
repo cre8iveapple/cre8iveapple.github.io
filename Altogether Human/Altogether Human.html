@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Altogether Human</title>
+
+<script Language="JavaScript1.2">
+<!--
+window.onload = function(){
+	var specificNodeID = unescape(parent.document.location.hash.substring(1));	
+	//if required, locate map and open
+	if (specificNodeID != null && specificNodeID !="" ){
+		var index = specificNodeID.lastIndexOf('_');
+		if (index != -1) {
+			var mapID = specificNodeID.substring(index+1, specificNodeID.length);
+			var mapAnchor = parent.menuFrame.document.getElementById(mapID);
+			if (mapAnchor != null) {
+				parent.mapFrame.location = mapAnchor.href;
+			}
+		}
+	}
+}
+//-->
+</script>
+
+</head>
+<frameset cols='25%,*'>
+<frame name="menuFrame" id="menuFrame" src='TOC.html'>
+<frame name="mapFrame" id="mapFrame" src="Aldridge_Parish_Curc_192168061385481980603.html">
+</frameset>
+</html>

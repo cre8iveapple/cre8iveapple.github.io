@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Guess Who</title>
+<style>
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+div#Guess {
+border: 10px solid pink;
+}
+
+div#Instructions {
+    width: 25%;
+    float: right;
+}
+
+.question p{
+text-align: center;
+}
+
+.question {
+    	background-color: #dfdfdf;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+border: 5px solid pink;
+}
+
+.question:hover {
+border: 5px solid pink;
+}
+
+
+.box {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border: 2px solid pink;
+background-color: #FEFEFE;
+width: 10%;
+height: 150px;
+display: inline-table;
+margin-left: auto;
+margin-right: auto;
+}
+.box:hover {
+border: 5px solid pink;
+}
+
+.box p{
+text-align: center;
+}
+
+
+
+</style>
+
+
+<script>
+var random_images_array = ["Jessica.gif", "Ruby.gif", "Thomas.gif", "Fleur.gif", "Sara.gif", "Amir.gif", 
+"Hugo.gif", "Lucy.gif", "Ayesha.gif", "Alexandre.gif", "Lucas.gif", "Adele.gif", 
+"Simon.gif", "Antonio.gif", "Edward.gif", "Mateo.gif", "Daniel.gif", "Cameron.gif", 
+"Gabriel.gif", "Amelie.gif", "Diego.gif", "Sofia.gif", "Roberto.gif", "Zoe.gif" ];
+
+
+function getRandomImage(imgAr, path) {
+    	path = path || 'images/'; // default path here
+    	var num = Math.floor( Math.random() * imgAr.length );
+    	var img = imgAr[ num ];
+    	imgStr = '<div id = "Guess" onclick = "" class = "box"><H1> Your Character is '+ img + '<H1/><img src="' + path + img + '" alt = ""></div>';
+    	document.write(imgStr); document.close();
+}
+
+function drawBoard(imgAr, path) {
+	var imgStr ='<div id = "board">';
+	document.write(imgStr); document.close();
+	for (i = 0; i < imgAr.length; i++) { 
+    		path = path || 'images/'; // default path here
+    		var img = imgAr[ i ];
+    		imgStr = '<div id = "'+ i +'" onclick = "divDisplay(this)" class = "box"><p>'+ img + '</p><img src="' + path + img + '" alt = ""></div>';
+    		document.write(imgStr); document.close();
+	}
+	imgStr ='</div>';
+	document.write(imgStr); document.close();
+}
+
+function divDisplay(item) { 
+        item.style.backgroundColor = "#FFFFFF";  
+	item.style.display = "none";    
+    }
+
+</script>
+</head>
+<body>
+<div id="contentArea">
+
+<div id="Instructions">
+
+<script type="text/javascript">getRandomImage(random_images_array);</script>
+
+<h4>Instructions</h4>
+<p>The aim of the game is to guess which character out of 24 possibilities their opponent has selected.</p>
+<p>The computer has randomly assigned you a character.</p>
+<p>Take it in turns to ask yes or no questions, such as Do you have black hair? or Are you wearing glasses?. </p>
+<p>There are some question ideas below</p>
+<p>Clicking on a character or question will eliminate them from the board. </p>
+<p>The winner is the first person who correctly guesses their opponents character.</p>
+
+<p>Refreashing the page will change your Random character and reset your board.</p>
+
+
+
+<div id="Questions">
+<div onclick="divDisplay(this)" class="question"><p>Are you a girl?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Are you a boy?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have black hair?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have brown hair?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have blonde hair?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have ginger hair?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have curly hair?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you wear glasses?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Do you have a beard?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Are you wearing a blue t-shirt?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Are you wearing a green t-shirt?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Are you wearing a red t-shirt?</p></div>
+<div onclick="divDisplay(this)" class="question"><p>Are you smiling with your teeth?</p></div>
+</div>
+</div>
+
+
+
+
+<div id="board"><div id="0" onclick="divDisplay(this)" class="box"><p>Jessica.gif</p><img src="images/Jessica.gif" alt=""></div>
+<div id="1" onclick="divDisplay(this)" class="box"><p>Ruby.gif</p><img src="images/Ruby.gif" alt=""></div>
+<div id="2" onclick="divDisplay(this)" class="box"><p>Thomas.gif</p><img src="images/Thomas.gif" alt=""></div>
+<div id="3" onclick="divDisplay(this)" class="box"><p>Fleur.gif</p><img src="images/Fleur.gif" alt=""></div>
+<div id="4" onclick="divDisplay(this)" class="box"><p>Sara.gif</p><img src="images/Sara.gif" alt=""></div>
+<div id="5" onclick="divDisplay(this)" class="box"><p>Amir.gif</p><img src="images/Amir.gif" alt=""></div>
+<div id="6" onclick="divDisplay(this)" class="box"><p>Hugo.gif</p><img src="images/Hugo.gif" alt=""></div>
+<div id="7" onclick="divDisplay(this)" class="box"><p>Lucy.gif</p><img src="images/Lucy.gif" alt=""></div>
+<div id="8" onclick="divDisplay(this)" class="box"><p>Ayesha.gif</p><img src="images/Ayesha.gif" alt=""></div>
+<div id="9" onclick="divDisplay(this)" class="box"><p>Alexandre.gif</p><img src="images/Alexandre.gif" alt=""></div>
+<div id="10" onclick="divDisplay(this)" class="box"><p>Lucas.gif</p><img src="images/Lucas.gif" alt=""></div>
+<div id="11" onclick="divDisplay(this)" class="box"><p>Adele.gif</p><img src="images/Adele.gif" alt=""></div>
+<div id="12" onclick="divDisplay(this)" class="box"><p>Simon.gif</p><img src="images/Simon.gif" alt=""></div>
+<div id="13" onclick="divDisplay(this)" class="box"><p>Antonio.gif</p><img src="images/Antonio.gif" alt=""></div> 
+<div id="14" onclick="divDisplay(this)" class="box"><p>Edward.gif</p><img src="images/Edward.gif" alt=""></div>
+<div id="15" onclick="divDisplay(this)" class="box"><p>Mateo.gif</p><img src="images/Mateo.gif" alt=""></div>
+<div id="16" onclick="divDisplay(this)" class="box"><p>Daniel.gif</p><img src="images/Daniel.gif" alt=""></div>
+<div id="17" onclick="divDisplay(this)" class="box"><p>Cameron.gif</p><img src="images/Cameron.gif" alt=""></div>
+<div id="18" onclick="divDisplay(this)" class="box"><p>Gabriel.gif</p><img src="images/Gabriel.gif" alt=""></div>
+<div id="19" onclick="divDisplay(this)" class="box"><p>Amelie.gif</p><img src="images/Amelie.gif" alt=""></div>
+<div id="20" onclick="divDisplay(this)" class="box"><p>Diego.gif</p><img src="images/Diego.gif" alt=""></div>
+<div id="21" onclick="divDisplay(this)" class="box"><p>Sofia.gif</p><img src="images/Sofia.gif" alt=""></div>
+<div id="22" onclick="divDisplay(this)" class="box"><p>Roberto.gif</p><img src="images/Roberto.gif" alt=""></div>
+<div id="23" onclick="divDisplay(this)" class="box"><p>Zoe.gif</p><img src="images/Zoe.gif" alt=""></div></div>
+
+</div>
+</body>
+</html>

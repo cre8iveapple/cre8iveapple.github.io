@@ -1,0 +1,479 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Aldridge Parish Curch Pilot Course</title>
+<style>
+td { font-family:Arial, Helvetica; font-size:8.0pt; font-weight:normal; }
+</style>
+<script Language="JavaScript1.2">
+<!--
+var highlightDiv = null;
+window.onload = function(){
+	var specificNodeID = unescape(parent.document.location.hash.substring(1));
+	scrollAndHighlight(specificNodeID);
+}
+
+var IE = 0; var IE5 = 0; var NS = 0; var GECKO = 0;
+var openpopups = new Array();
+if (document.all) {     // Internet Explorer Detected
+	OS = navigator.platform;
+	VER = new String(navigator.appVersion);
+	VER = VER.substr(VER.indexOf("MSIE")+5, VER.indexOf(" "));
+	if ((VER <= 5) && (OS == "Win32")) {
+		IE5 = true;
+	} else {
+		IE = true;
+	}
+}
+else if (document.layers) {   // Netscape Navigator Detected
+	NS = true;
+}
+else if (document.getElementById) { // Netscape 6 Detected
+	GECKO = true;
+}
+else {
+	alert("Unrecognized Browser Detected. Sorry, your browser is not compatible.");
+}
+
+function handleResize() {
+	location.reload();
+	return false;
+}
+
+if ((NS) && (navigator.platform == "MacPPC")) {
+	window.captureEvents(Event.RESIZE);
+	window.onresize = handleResize;
+}
+
+function scrollAndHighlight(specificNodeID) {
+	if (specificNodeID != null && specificNodeID != "") {
+		highlightDiv = document.getElementById(specificNodeID+'highlight');
+		if (highlightDiv) {
+			highlightDiv.style.visibility = 'visible';
+			x = highlightDiv.style.left;
+			y = highlightDiv.style.top;
+			yb = highlightDiv.style.height;
+			x = (x.substring(0, x.length-2))*1;
+			y = (y.substring(0, y.length-2))*1;
+			yb = (yb.substring(0, yb.length-2))*1;
+			y = y+yb;
+			window.scrollTo(x,y);
+			// This didn't work!
+			//node = highlightDiv = document.getElementById(specificNodeID);
+			//node.scrollIntoView(true);
+		}
+	}
+}
+
+function openNewWindow(url, name, features){
+	hideHints(1);
+	var popBox = window.open(url, name, features);
+	popBox.focus();
+return;
+}
+
+function loadFile(url, name) {
+	hideHints(1);
+	window.location.href = url;
+return;
+}
+
+function openFile(url, name) {
+	hideHints(1);
+	var popBox = window.open(url, name);
+	popBox.focus();
+return;
+}
+
+function showHint(event, popupName) {
+	hideHints(1);
+	if (GECKO) {
+		document.getElementById(popupName).style.left = event.layerX+7 + document.body.scrollLeft;
+		document.getElementById(popupName).style.top = event.layerY-5 + document.body.scrollTop;
+		document.getElementById(popupName).style.background = "#FFFED9";
+		document.getElementById(popupName).style.visibility = "visible";
+		openpopups.push(popupName);
+	}
+	else if (NS) {
+		document.layers[popupName].moveTo(event.pageX+7 + document.body.scrollLeft, event.pageY-5 + document.body.scrollTop);
+		document.layers[popupName].bgColor = "#FFFED9";
+		document.layers[popupName].visibility = "show";
+		openpopups.push(popupName);
+	}
+	else if (IE || IE5) {
+		window.event.cancelBubble = true;
+		document.all[popupName].style.left = window.event.clientX+7 + document.body.scrollLeft;
+		document.all[popupName].style.top = window.event.clientY-5 + document.body.scrollTop;
+		document.all[popupName].style.visibility = "visible";
+		openpopups[openpopups.length] = popupName;
+	}
+	return false;
+}
+
+function hideHighlight() {
+	if (highlightDiv != null) {
+		highlightDiv.style.visibility = 'hidden';
+	}
+}
+
+function hideHints(fromBody) {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) {
+		popupname = new String (openpopups[i]);
+		if ( IE || (GECKO && fromBody == 1)) {
+			document.getElementById(popupname).style.visibility = "hidden";
+		}
+		else if (NS) {
+			document.layers[popupname].visibility = "hide";
+		}
+		else if (IE5) {
+			document.all[popupname].style.visibility = "hidden";
+		}
+	}
+	openpopups = new Array();
+	return;
+}
+
+//-->
+</script>
+</head>
+
+<body onClick="hideHints(0); hideHighlight(); return false;"  style="margin:0px; padding: 0px;">
+<img Suppress=true src="images/192168061385481980603_map.jpg" width="219" height="796" hspace=0 vspace=0 border=0 usemap="#192168061385481980603_map">
+<map name="192168061385481980603_map">
+<area id="nid192168061385482281492_192168061385481980603" shape="rect" coords="21,66,102,80" href="" onClick="javascript:openNewWindow('details/192168061385482281492_192168061385481980603.html','192168061385482281492','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482281492labelhint'); return false;"/>
+<area shape="rect" coords="45,29,78,62" href="javascript:loadFile('pre_course__192168061385482281492.html','192168061385482281492')" onClick="javascript:loadFile('pre_course__192168061385482281492.html','192168061385482281492')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482281492imagehint'); return false;"/>
+<area id="nid192168061385482330172_192168061385481980603" shape="rect" coords="77,183,193,213" href="" onClick="javascript:openNewWindow('details/192168061385482330172_192168061385481980603.html','192168061385482330172','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482330172labelhint'); return false;"/>
+<area shape="rect" coords="119,146,152,179" href="javascript:loadFile('Week_2_-_Creature_to_192168061385482330172.html','192168061385482330172')" onClick="javascript:loadFile('Week_2_-_Creature_to_192168061385482330172.html','192168061385482330172')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482330172imagehint'); return false;"/>
+<area shape="rect" coords="152,141,156,157" onClick="javascript:openNewWindow('details/192168061385482330172_192168061385481980603.html','192168061385482330172','width=550, height=450, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482330172text'); return false;"/>
+<area id="nid192168061385482345795_192168061385481980603" shape="rect" coords="91,261,191,275" href="" onClick="javascript:openNewWindow('details/192168061385482345795_192168061385481980603.html','192168061385482345795','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482345795labelhint'); return false;"/>
+<area shape="rect" coords="125,224,158,257" href="javascript:loadFile('Week_3_-_Image_192168061385482345795.html','192168061385482345795')" onClick="javascript:loadFile('Week_3_-_Image_192168061385482345795.html','192168061385482345795')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482345795imagehint'); return false;"/>
+<area shape="rect" coords="158,219,162,235" onClick="javascript:openNewWindow('details/192168061385482345795_192168061385481980603.html','192168061385482345795','width=550, height=450, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482345795text'); return false;"/>
+<area id="nid192168061385482383809_192168061385481980603" shape="rect" coords="94,391,200,405" href="" onClick="javascript:openNewWindow('details/192168061385482383809_192168061385481980603.html','192168061385482383809','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482383809labelhint'); return false;"/>
+<area shape="rect" coords="131,354,164,387" href="javascript:loadFile('Week_5_-_Reason__192168061385482383809.html','192168061385482383809')" onClick="javascript:loadFile('Week_5_-_Reason__192168061385482383809.html','192168061385482383809')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482383809imagehint'); return false;"/>
+<area shape="rect" coords="164,349,168,365" onClick="javascript:openNewWindow('details/192168061385482383809_192168061385481980603.html','192168061385482383809','width=550, height=450, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482383809text'); return false;"/>
+<area id="nid192168061385482397888_192168061385481980603" shape="rect" coords="74,456,215,486" href="" onClick="javascript:openNewWindow('details/192168061385482397888_192168061385481980603.html','192168061385482397888','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482397888labelhint'); return false;"/>
+<area shape="rect" coords="128,419,161,452" href="javascript:loadFile('Week_6_-_Messages_fr_192168061385482397888.html','192168061385482397888')" onClick="javascript:loadFile('Week_6_-_Messages_fr_192168061385482397888.html','192168061385482397888')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482397888imagehint'); return false;"/>
+<area shape="rect" coords="161,414,165,430" onClick="javascript:openNewWindow('details/192168061385482397888_192168061385481980603.html','192168061385482397888','width=550, height=450, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482397888text'); return false;"/>
+<area id="nid192168061385482412654_192168061385481980603" shape="rect" coords="55,780,139,794" href="" onClick="javascript:openNewWindow('details/192168061385482412654_192168061385481980603.html','192168061385482412654','width=550, height=450, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482412654labelhint'); return false;"/>
+<area shape="rect" coords="81,743,114,776" href="javascript:loadFile('Post_Course_192168061385482412654.html','192168061385482412654')" onClick="javascript:loadFile('Post_Course_192168061385482412654.html','192168061385482412654')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'192168061385482412654imagehint'); return false;"/>
+<area id="nid1921680121393171515406_192168061385481980603" shape="rect" coords="58,107,206,121" href="" onClick="javascript:openNewWindow('details/1921680121393171515406_192168061385481980603.html','1921680121393171515406','width=550, height=530, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393171515406labelhint'); return false;"/>
+<area shape="rect" coords="116,70,149,103" href="javascript:loadFile('Week_1_-_Person_to_P_1921680121393171515406.html','1921680121393171515406')" onClick="javascript:loadFile('Week_1_-_Person_to_P_1921680121393171515406.html','1921680121393171515406')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393171515406imagehint'); return false;"/>
+<area shape="rect" coords="149,65,153,81" onClick="javascript:openNewWindow('details/1921680121393171515406_192168061385481980603.html','1921680121393171515406','width=550, height=530, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393171515406text'); return false;"/>
+<area id="nid1921680121393176918010_192168061385481980603" shape="rect" coords="75,543,218,557" href="" onClick="javascript:openNewWindow('details/1921680121393176918010_192168061385481980603.html','1921680121393176918010','width=550, height=530, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176918010labelhint'); return false;"/>
+<area shape="rect" coords="130,506,163,539" href="javascript:loadFile('Week_7_-_Gender_and__1921680121393176918010.html','1921680121393176918010')" onClick="javascript:loadFile('Week_7_-_Gender_and__1921680121393176918010.html','1921680121393176918010')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176918010imagehint'); return false;"/>
+<area shape="rect" coords="163,501,167,517" onClick="javascript:openNewWindow('details/1921680121393176918010_192168061385481980603.html','1921680121393176918010','width=550, height=530, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176918010text'); return false;"/>
+<area id="nid1921680121393176951644_192168061385481980603" shape="rect" coords="95,610,201,624" href="" onClick="javascript:openNewWindow('details/1921680121393176951644_192168061385481980603.html','1921680121393176951644','width=550, height=530, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176951644labelhint'); return false;"/>
+<area shape="rect" coords="132,573,165,606" href="javascript:loadFile('Week_8_-_Violence_1921680121393176951644.html','1921680121393176951644')" onClick="javascript:loadFile('Week_8_-_Violence_1921680121393176951644.html','1921680121393176951644')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176951644imagehint'); return false;"/>
+<area shape="rect" coords="165,568,169,584" onClick="javascript:openNewWindow('details/1921680121393176951644_192168061385481980603.html','1921680121393176951644','width=550, height=530, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176951644text'); return false;"/>
+<area id="nid1921680121393176983902_192168061385481980603" shape="rect" coords="76,684,214,714" href="" onClick="javascript:openNewWindow('details/1921680121393176983902_192168061385481980603.html','1921680121393176983902','width=550, height=530, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176983902labelhint'); return false;"/>
+<area shape="rect" coords="129,647,162,680" href="javascript:loadFile('Week_9_-_Fulfilment__1921680121393176983902.html','1921680121393176983902')" onClick="javascript:loadFile('Week_9_-_Fulfilment__1921680121393176983902.html','1921680121393176983902')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176983902imagehint'); return false;"/>
+<area shape="rect" coords="162,642,166,658" onClick="javascript:openNewWindow('details/1921680121393176983902_192168061385481980603.html','1921680121393176983902','width=550, height=530, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121393176983902text'); return false;"/>
+<area id="nid1921680121394355397472_192168061385481980603" shape="rect" coords="96,330,188,344" href="" onClick="javascript:openNewWindow('details/1921680121394355397472_192168061385481980603.html','1921680121394355397472','width=550, height=530, scrollbars=yes, resizable=yes');" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121394355397472labelhint'); return false;"/>
+<area shape="rect" coords="126,293,159,326" href="javascript:loadFile('Week_4_-_Life_1921680121394355397472.html','1921680121394355397472')" onClick="javascript:loadFile('Week_4_-_Life_1921680121394355397472.html','1921680121394355397472')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121394355397472imagehint'); return false;"/>
+<area shape="rect" coords="159,288,163,304" onClick="javascript:openNewWindow('details/1921680121394355397472_192168061385481980603.html','1921680121394355397472','width=550, height=530, scrollbars=yes, resizable=yes')" onmouseout="hideHints(1); return false;" onmouseover="showHint(event,'1921680121394355397472text'); return false;"/>
+</map></div>
+<div id="192168061385482281492imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482281492labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482281492_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:20px; top:27px; width:83px; height:55px; border: 2px solid yellow"></div>
+<div id="192168061385482330172imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482330172labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482330172_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:76px; top:144px; width:118px; height:71px; border: 2px solid yellow"></div>
+<div id="192168061385482330172text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Creature to Creator (we are designed for a relationship with God). To be complete as a human being we need to know God. In what sense are we distinct from other animals?
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482345795imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482345795labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482345795_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:90px; top:222px; width:102px; height:55px; border: 2px solid yellow"></div>
+<div id="192168061385482345795text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Image (“Mirror, mirror on the wall). The way our sense of selfhood is manufactured from multiple influences). Fashion? Significance of appearance? Icons?
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482383809imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482383809labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482383809_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:93px; top:352px; width:108px; height:55px; border: 2px solid yellow"></div>
+<div id="192168061385482383809text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Reason - Its importance, virtues and limitations.
+What do Christians understand by the Mind, What is spiritual blindness? How does the Christian develop a Christian mind? In what sense does Faith transcend mind? How do we use and abuse our minds? Wha...
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482397888imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482397888labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482397888_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:73px; top:417px; width:143px; height:71px; border: 2px solid yellow"></div>
+<div id="192168061385482397888text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				How are we portrayed and impacted as human persons by the images of various media and social media. The power of the media to shape perception……of ourselves, norms, desires and aspirations. What does the media contribute to virtue?
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482412654imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="192168061385482412654labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid192168061385482412654_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:54px; top:741px; width:86px; height:55px; border: 2px solid yellow"></div>
+<div id="1921680121393171515406imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393171515406labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid1921680121393171515406_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:57px; top:68px; width:150px; height:55px; border: 2px solid yellow"></div>
+<div id="1921680121393171515406text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Person to Person (we are designed for human relationship).
+Themes of individualism, loneliness, formation of persons through key relationships. Isolation. Interaction.
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176918010imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176918010labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid1921680121393176918010_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:74px; top:504px; width:145px; height:55px; border: 2px solid yellow"></div>
+<div id="1921680121393176918010text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Gender and God - What it means to be male and female. Sexuality and identity. Help folk recognise themselves as sexual beings even if their sexuality cannot always find expression.  People are living alone outside of relationships for a significant p...
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176951644imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176951644labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid1921680121393176951644_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:94px; top:571px; width:108px; height:55px; border: 2px solid yellow"></div>
+<div id="1921680121393176951644text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Violence and what it does to us. How does violence present itself in your experience of life? Is it possible to defend exposure to violent images?
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176983902imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121393176983902labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid1921680121393176983902_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:75px; top:645px; width:140px; height:71px; border: 2px solid yellow"></div>
+<div id="1921680121393176983902text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				I only want to be happy?
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121394355397472imagehint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+<div id="1921680121394355397472labelhint" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+	<table width="200" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="200">
+			<td width="200" style="hint"><p>
+				Click icon to view map contents<br>Click label to view this node's details
+			</p></td>
+		</tr>
+	</table>
+</div>
+
+<div id="nid1921680121394355397472_192168061385481980603highlight" style="position:absolute; z-index:15; visibility:hidden; left:95px; top:291px; width:94px; height:55px; border: 2px solid yellow"></div>
+<div id="1921680121394355397472text" style="position: absolute; z-index: 20; visibility: hidden; left: 0; top: 0;">
+	<table width="250" border=1 cellpadding=1 cellspacing=0 bgcolor="#FFFED9">
+		<tr width="250">
+			<td width="250" style="hint"><p>
+				Life – making, living and ending life. Issues around the creation of people.  Valuing life itself. Pro-life. Euthanasia, death, eternity. Remember that our humanity and life itself derives its dignity from our being God’s Creature.
+			</p></td>
+		</tr>
+	</table>
+</div>
+</body></html>
