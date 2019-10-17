@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>     
+  <head>         
+    <title>Samantha Aplin          
+    </title>
+<link rel="stylesheet" type="text/css" href="css.css">    
+<script type="text/JavaScript" src="chroma.js"></script> 
+<script type="text/JavaScript" src="6CS0063JS.js"></script> 
+        
+  </head>     
+  <body>         
+    <div id='rightDiv' class='box right'> 
+    <h3>(6CS006) Digital Media Technology - Part 3 <br> Samantha Aplin - 9913852</h3>                      
+    <form name="form">
+    <h3>Audio Controls</h3> 
+    <div class='box'>      
+    <input id= "button1" type="button" name="button1" Value="Play the sound" onClick="playSound()"> 
+    <input id= "button2" type="button" name="button2" Value="Stop the sound" onClick="stopSound()"> 
+    <input id= "button2" type="button" name="button2" Value="Reset" onClick="resetAll()"> 
+    <br>
+    Master Volume: <input id="volume" type="range" min="0" max="1" step="0.1" value="1.0"/> 
+    <br>
+    Master Filter:<select name="filterTypeMaster" id="filterTypeMaster" onchange="divMasterDisplay(), adjustMasterFilterType()">
+                <option value="none" selected>Select Filter</option>
+                <option value="lowpass">Low pass filter</option>
+                <option value="highpass">High pass filter</option>
+                <option value="bandpass">Band pass filter</option>
+                <option value="lowshelf">Low shelf filter</option>
+                <option value="highshelf">High shelf filter</option>
+                <option value="peaking">Peaking filter</option>
+                <option value="notch">Notch filter</option>
+                <option value="allpass">All pass filter</option>
+                </select>
+            <div id="filterfrequencySelMaster" style="display:none;">
+              Frequency:<input type="text" id="filterFrequencyMaster"  name="filterFrequency" size= "5"  value="400" onchange="adjustMasterFilterFrequency()" >
+              Quality:<input type="text" id="filterQualityMaster"  name="filterQuality" size= "5"  value="0" onchange="adjustMasterFilterQuality()" >           
+            </div>                        
+       </div> 
+    <h3>Add Sounds</h3>  
+      <div id='sounds'>  
+        <div class='box sound'>
+          <h4>Sound 1</h4>
+            <div id="soundSel0" class='hidden'>
+                <select name="effect0" id="effect0" onchange="divDisplay(0)">
+                <option value="--Select---">Input Type</option>
+                <option value="oscillator">Oscillator</option>
+                <option value="uploadedfile">Form File</option>
+                </select>
+            <div id="oscillatorSelDisp0" style= "display:none;">
+                <select name="oscillatorSel0" id="oscillatorSel0" onchange="adjustOscillator(0)">
+                <option value="sine">Sine</option>
+                <option value="square">Square</option>
+                <option value="sawtooth">Sawtooth</option>
+                <option value="triangle">Triangle</option>
+                </select><br>
+                Frequency:<input type="text" name="frequency" size= "5" id="frequency0"  value="400" onchange="adjustFrequency(0)" >
+
+                Detune:<input type="text" name="detune" size= "5" id="detune0"  value="0" onchange="adjustDetune(0)" >
+            </div>
+
+                <input type="file" style= "display:none;" id="uploadfile0" name="0" multiple onchange="loadaSound()">
+                <select name="filterType0" id="filterType0" onchange="divDisplay(0), adjustFilterType(0)">
+                <option value="none" selected>Select Filter</option>
+                <option value="lowpass">Low pass filter</option>
+                <option value="highpass">High pass filter</option>
+                <option value="bandpass">Band pass filter</option>
+                <option value="lowshelf">Low shelf filter</option>
+                <option value="highshelf">High shelf filter</option>
+                <option value="peaking">Peaking filter</option>
+                <option value="notch">Notch filter</option>
+                <option value="allpass">All pass filter</option>
+                </select>
+            <div id="filterfrequencySel0" style="display:none;" >
+                Frequency:<input type="text" id="filterFrequency0" name="filterFrequency" size= "5"  value="400" onchange="adjustFilterFrequency(0)" >
+                Quality:<input type="text" id="filterQuality0" name="filterQuality" size= "5"  value="0" onchange="adjustFilterQuality(0)" >
+            </div> 
+            <div>
+                Volume:<input id="volume0" type="range" min="0" max="1" step="0.1" value="1.0" onchange="adjustSoundVolume(0)">
+                <br>
+                Destructive Interference: <input type="checkbox" id="DI0" value="false" onchange="adjustSoundVolume(0)"> 
+            </div>                                                                            
+           
+        </div> 
+    </div>
+    </div> 
+    <input id= "addSound" type="button" name="addSound" Value="Add a sound" onClick="changeSound(0)">   
+    <h3>Frequency Analysis</h3>  
+    <div class='box'>
+    <div id="debugInfo" >
+        testing...
+    </div>
+    <table id = "frequencyAnalysisTable" class='box'>
+          <thead>
+           <tr>
+            <td>Time Scince Start</td>
+            <td>Frequency</td> 
+            </tr>
+          <thead>
+          <tbody>
+          
+          <tbody>
+      </table>  
+    </div> 
+  </form>    
+</div> 
+<div id='leftDiv' class='box plain'> 
+
+<h3>Time and Frequency Visualisation</h3>       
+             
+      <!-- The canvas where we visualise our waveform. -->
+			<canvas id="canvasMain" class='box canvas' width="640" height="360" ></canvas>
+<h3>Spectrogram</h3>   
+      <canvas id="canvas2" class='box canvas' width="640" height="500"></canvas>                      
+<script type="text/javascript">
+    init();
+    addEvents();
+    </script>       
+</div>  
+  </body>
+</HTMl>

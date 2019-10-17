@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>     
+  <head>         
+    <title>Samantha Aplin          
+    </title>
+<script type="text/JavaScript" src="js.js"></script>     
+  </head>     
+  <body><h1>(7VC010) Creative Approaches to D+VC Research and Practice</h1>         
+    <p>Samantha Aplin 9913852     
+    </p> 
+            
+
+    <div id='rightDiv' style="position: relitive; float:right;  width: 300px; background-color:white; border: 1px solid rgb(206, 208, 223) ;
+border-radius: 10px; 
+-moz-border-radius: 10px ;
+-webkit-border-radius: 10px ;
+padding: 10px;">                       
+    <h3>Upload File 1</h3>   
+  
+      <input type="file" id="files" name="files[]" multiple/>
+      <div id='outputImage'>    
+      </div>                  
+    
+    <h3>Effects - select filter to apply</h3>           
+    
+  <select name="effect" id="effect" onchange="divDisplay()">
+<option value="greyscale">Grayscale</option>
+<option value="grayscaleLuminosity">Grayscale Luminosity</option>
+<option value="grayscaleProminent">Grayscale Prominent</option>
+<option value="thresholdEffect">thresholdEffect</option>
+<option value="sepia">Sepia / colourize</option>
+<option value="invert">Invert</option>
+<option value="sharpen">Sharpen</option>
+<option value="emboss">Emboss</option>
+<option value="emboss45">Emboss45</option>
+<option value="boxBlur">Box Blur</option>
+<option value="motionBlur">Motion Blur</option>
+<option value="gausian">Gausian</option>
+<option value="sobel">Sobel</option>
+<option value="robertsCross">Roberts Cross</option>
+<option value="nonMaximumSuppression">Non Maximum Suppression</option>  
+<option value="nonMaximumSuppressionHorizontal">Non Maximum Suppression Horizontal</option>
+<option value="outline">Outline</option>
+<option value="canny">Canny</option> 
+<option value="merge">Merge</option>  
+</select>  
+                                                                                              
+    
+     <div id='colourSel' style="display: none;">
+      Colour: <input type="color" id="setColour" onchange="setColourOption()" > 
+      </div> 
+      <div id='biasSel' style="display: none;">
+      Bias: -100<input type="range" name="bias" Id="bias"  Value="0" min="-100" max="100">+100
+      </div>
+      <div id='thresholdSel' style="display: none;">
+      Threashold: -100 <input type="range" id="thresh" Value="0" name="Edge Detection threshold"  min="-100" max="100">+100 
+      </div>
+   <h3>Filters - select area to mask</h3> 
+     <p>
+     <input type="radio"  name="maskThreshYN" id="maskThreshNone" value="true"  onchange="setThreshMask('notset')" checked>No Threashold Mask <br>
+     <input type="radio"  name="maskThreshYN" id="maskOver" value="true"  onchange="setThreshMask('setOver')">Mask Over threashold<br>
+     <input type="Radio" name="maskThreshYN"id="maskUnder" value="true" onchange="setThreshMask('setUnder')">Mask Under threashold<br> 
+    <div id='setThreshMaskDiv' style="display: none;">
+      Mask Threashold: 1 <input type="range" id="maskThresh" value="127.5" name="Mask Threshold"  min="1" max="255">255 
+    </div> 
+      </p>
+      <p> 
+       <input type="radio"  name="maskColour" id="maskColour" value="true"  onchange="setColourMask('notset')" checked>No Colour Mask<br>
+      <input type="radio"  name="maskColour" id="maskColour" value="true"  onchange="setColourMask('set')">Set Colour Mask<br>
+    <div id='setColourMaskDiv' style="display: none;">
+      <input type="checkbox" id="invertColourMask" value="true" >Invert Colour Mask <br>
+      Select Colour Mask:<input type="color" id="colorMask" onchange="setColourForMask()">        
+      <br>
+      Colour Threshold: 1<input type="range" id="colThresh" value="75" name="Colour threshold" min="1" max="255" >255 
+      <br> 
+      </div> 
+      </p>          
+    <input type="button" name="button" Value="Submit" onClick="change()">       
+    <input type="button" name="button" Value="Revert To Origional" onClick="loadImg()"> 
+    <br>
+    <input type="button" name="button" Value="Reset Sliders and Colour Pickers" onClick="resetOptions()"> 
+    </div> 
+</div> 
+
+<div id='leftDiv' style="  border: 1px solid rgb(206, 208, 223) ;
+border-radius: 10px ;
+-moz-border-radius: 10px ;
+-webkit-border-radius: 10px ; margin-left: auto;
+    margin-right: auto; padding: 10px;"> 
+<h3>Working Image</h3>       
+    <div id='aDiv2'>             
+      <canvas id="canvas" style="padding:10px;">             
+      </canvas>         
+    </div>       
+<script type="text/javascript">
+    addLoadEventToFileSelect()
+    </script>       
+    <h3>Right click image below to save file</h3> 
+    <img id="resultimg" src="" alt="" title="right click here to save img"> 
+</div>  
+  </body>
+</HTMl>
