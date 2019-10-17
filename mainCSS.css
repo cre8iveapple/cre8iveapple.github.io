@@ -99,7 +99,7 @@ border-radius: 10px;
 background-color: #FEFEFE;
 width: 110px;
 height: 50px;
-display: inline-table;
+display: inline-grid;
 margin: 5px;
 }
 .box:hover {
